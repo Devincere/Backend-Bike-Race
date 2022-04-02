@@ -17,6 +17,6 @@ class SlogansController < ApplicationController
 
   private 
   def slogan_params
-    params.require(:slogan).permit(:firstname, :lastname, :email, :suggestion)
+    params.require(:slogan).permit(:firstName, :lastName, :email, :suggestion)
   end
 end
