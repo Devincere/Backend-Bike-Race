@@ -8,10 +8,6 @@ class SlogansControllerTest < ActionDispatch::IntegrationTest
     @slogan_fail =  slogans(:two)
   end
 
-  test "the truth" do
-    assert true
-  end
-
   test "should get index" do
     get slogans_url
     assert_response :success
@@ -24,5 +20,8 @@ class SlogansControllerTest < ActionDispatch::IntegrationTest
   test "slogan should NOT save" do
     assert Slogan.new(firstName: @slogan.firstName, lastName: @slogan.lastName, suggestion: @slogan.suggestion)
   end
-   
+  
+  test "slogan should NOT be nil" do
+    assert_not_nil Slogan.new(firstName: @slogan.firstName, lastName: @slogan.lastName, suggestion: @slogan.suggestion)
+  end
 end

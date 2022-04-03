@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  firstName: MyString
-  lastName: MyString
-  city: MyString
-  state: MyString
-  position: MyString
+  firstName: "Dustin"
+  lastName: "Green"
+  city: "Hickory Hills"
+  state: "IL"
+  position: "lat: 40.00, lng: -105.35"
 
 two:
-  firstName: MyString
-  lastName: MyString
-  city: MyString
-  state: MyString
-  position: MyString
+  firstName: "Jason"  
+  lastName: "Finn"
+  city: "Huntington Beach"
+  state: "CA"
+  position: "lat: 39.95, lng: -105.24"
